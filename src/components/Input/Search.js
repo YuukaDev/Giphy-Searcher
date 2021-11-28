@@ -4,7 +4,7 @@ import { Input } from '@chakra-ui/react';
 function Search() {
   return (
     <div className="form-container">
-      <Input placeholder="Enter name" w="20%" />
+      <Input placeholder="Enter name" w="100%" />
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.nav-items {
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-items li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
