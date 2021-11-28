@@ -1,10 +1,13 @@
-import React from "react";
-import { Input } from "@chakra-ui/react";
+import { Heading, Container } from "@chakra-ui/react";
 
 function Header() {
   return (
     <div className="header-wrapper">
-      <Input className="input" placeholder="Enter gif" width="50%" size="lg" />
+      <Container display="flex" alignContent="center" justifyContent="center" mt="5%">
+        <Heading as="h1" size="xl">
+          Giphy Searcher
+        </Heading>
+      </Container>
     </div>
   );
 }
