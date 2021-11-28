@@ -1,6 +1,14 @@
-.container {
-    height: 100vh;
+.header-wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.header-wrapper .input {
+    color: white;
+    background-color: red;
+}
+
+::placeholder {
+    color: white;
 }
