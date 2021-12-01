@@ -10,16 +10,26 @@ function Navigation() {
     <>
       <Box
         display="flex"
-        justifyContent="center"
+        justifyContent="right"
         alignItems="center"
         p="30px 10%"
         bg="#24252a"
       >
-        <Header />
-        <Search />
-        <button className="cta" type="submit">
-          Submit
-        </button>
+        <p className="logo">
+          <Header />
+        </p>
+        <nav>
+          <ul class="nav__links">
+            <li>
+              <Search />
+            </li>
+            <li>
+              <button className="cta" type="submit">
+                Submit
+              </button>
+            </li>
+          </ul>
+        </nav>
       </Box>
     </>
   );
