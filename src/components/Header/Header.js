@@ -1,13 +1,23 @@
-import { Heading, Container, Box } from '@chakra-ui/react';
+import { Heading, Text, Box } from '@chakra-ui/react';
 import './Header.css';
 function Header() {
   return (
     <div className="wrapper">
-      <Box display="block">
-        <Heading as="h1" size="xl">
-          Giphy Searcher
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        color="white"
+      >
+        <Heading as="h3" className="header" size="xl">
+          GIPHY
         </Heading>
-        <Heading size="10px">GitHub</Heading>
+        <Text fontSize="2xl">
+          <a className="spacing" href="#">GitHub</a>
+        </Text>
+        <Text fontSize="2xl">
+            <a className="spacing" href="#">Twitter</a>
+        </Text>
       </Box>
     </div>
   );
