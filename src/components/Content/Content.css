@@ -5,14 +5,15 @@
 }
 
 .wrapper-form {
-  padding: 10px 10px;
-} 
+    margin-top: 10%;
+}
 
 .wrapper-form input {
-    padding: 10px;
-    border-radius: 10px;
-  color: #ebe6ea;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
   background-color: #ebe6ea;
+  outline: none;
 }
 
 .wrapper-form button {
