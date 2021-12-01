@@ -1,59 +1,39 @@
-.nav-items {
-  font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: #edf0f1;
-  text-decoration: none;
-  list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+.navigation {
+  color: #ebe6ea;
+  margin-top: 30px;
+  font-size: 2em;
+  font-family: 'Outfit', sans-serif;
 }
 
-.nav-items li a:hover {
-  color: #0088a9;
-}
-
-.cta {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
-}
-
-.logo {
-  margin-right: auto;
-}
-
-.nav__links {
-  list-style: none;
+.nav-item {
   display: flex;
-}
-
-.cta {
-  font-weight: 500;
-  color: #edf0f1;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  list-style-type: none;
 }
 
-.cta:hover:after {
-  width: 120%;
-  background-color: rgba(255, 255, 255, 0);
-
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+a {
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
 }
 
-.nav__links li a:hover {
-  color: #0088a9;
+a:after {
+  content: '';
+  display: block;
+  text-align: center;
+  height: 3px;
+  background: #fff;
+  transition: 0.5s all ease;
+  width: 0;
 }
 
-.cta {
-  margin-left: 10px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
