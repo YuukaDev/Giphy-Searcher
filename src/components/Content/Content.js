@@ -17,7 +17,8 @@ function Content() {
         }}
       >
         <div className="wrapper-form">
-          <input type="text" id="input" placeholder="Enter a username..." />
+          <input type="text" id="input" placeholder="Enter name..." />
+          &nbsp;&nbsp;&nbsp;
           <button type="submit">Submit</button>
         </div>
       </form>
