@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.spacing {
+  margin: 5px;
+  transition: 1s all ease;
+}
+
+a:hover {
+  transition: 1s all ease;
+  color: #0088a9;
+}
