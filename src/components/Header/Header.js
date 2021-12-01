@@ -13,10 +13,14 @@ function Header() {
           GIPHY
         </Heading>
         <Text fontSize="2xl">
-          <a className="spacing" href="#">GitHub</a>
+          <a className="spacing" href="https://github.com/YuukaDev">
+            GitHub
+          </a>
         </Text>
         <Text fontSize="2xl">
-            <a className="spacing" href="#">Twitter</a>
+          <a className="spacing" href="https://twitter.com/yuukasuoh">
+            Twitter
+          </a>
         </Text>
       </Box>
     </div>
