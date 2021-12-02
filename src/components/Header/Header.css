@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 .wrapper {
+  margin-top: 3%;
   text-align: center;
   font-family: 'Fira Sans';
   font-size: 4em;
