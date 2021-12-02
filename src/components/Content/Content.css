@@ -62,6 +62,7 @@ img {
 }
 
 .error {
+  margin-top: 2%;
   font-family: 'Fira Sans';
   text-transform: uppercase;
   font-weight: 800;
