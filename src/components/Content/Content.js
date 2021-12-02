@@ -209,7 +209,6 @@ function Content() {
           <a
             target="_blank"
             rel="noreferrer"
-            target="_blank"
             href={base.link19}
           >
             <img alt="gif" src={base.imgSrc19} />
