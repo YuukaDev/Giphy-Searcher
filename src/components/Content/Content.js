@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Content.css';
 
 function Content() {
+  const [error, setError] = useState('');
   const [base, setBase] = useState({
     imgSrc1: '',
     link1: '',
@@ -140,8 +141,9 @@ function Content() {
           e.preventDefault();
           const value = e.target.elements.input.value;
           if (!value) {
-            alert('no');
+            setError('Enter name of the gif');
           } else {
+            setError('');
             getGif(value);
           }
         }}
@@ -151,6 +153,7 @@ function Content() {
           &nbsp;&nbsp;&nbsp;
           <button type="submit">Submit</button>
         </div>
+        <p className="error">{error}</p>
         <div className="grid-wrapper">
           <a target="_blank" rel="noreferrer" href={base.link1}>
             <img alt="gif" src={base.imgSrc1} />
@@ -206,11 +209,7 @@ function Content() {
           <a target="_blank" rel="noreferrer" href={base.link18}>
             <img alt="gif" src={base.imgSrc18} />
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={base.link19}
-          >
+          <a target="_blank" rel="noreferrer" href={base.link19}>
             <img alt="gif" src={base.imgSrc19} />
           </a>
           <a target="_blank" rel="noreferrer" href={base.link20}>
