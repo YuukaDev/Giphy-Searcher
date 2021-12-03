@@ -70,3 +70,21 @@ img {
   text-align: center;
   font-size: 2em;
 }
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    font-size: 1.6em;
+  }
+
+  .wrapper-form  {
+    padding: 10px 5px;
+  }
+
+  .grid-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
