@@ -61,6 +61,10 @@ img {
   overflow: hidden;
 }
 
+.img-error {
+  display: none;
+}
+
 .error {
   margin-top: 2%;
   font-family: 'Fira Sans';
