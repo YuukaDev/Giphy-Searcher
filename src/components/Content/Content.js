@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Content.css';
 
 function Content() {
+  const [toggle, setToggle] = useState(false);
   const [error, setError] = useState('');
   const [base, setBase] = useState({
     imgSrc1: '',
@@ -71,6 +72,7 @@ function Content() {
     );
     const random = await url.json();
     console.log(random);
+    setToggle(true);
     setBase({
       imgSrc1: random.data[0].images.downsized.url,
       link1: random.data[0].url,
@@ -154,7 +156,7 @@ function Content() {
           <button type="submit">Submit</button>
         </div>
         <p className="error">{error}</p>
-        <div className="grid-wrapper">
+        <div className={toggle ? 'grid-wrapper' : 'img-error'}>
           <a target="_blank" rel="noreferrer" href={base.link1}>
             <img alt="gif" src={base.imgSrc1} />
           </a>
