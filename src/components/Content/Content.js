@@ -65,10 +65,10 @@ function Content() {
     imgSrc20: '',
     link20: '',
   });
-  //const API_KEY = 'tG7z3e9k7XxtjSLR0JHge6bvap6vLmm6';
+  const API_KEY = 'tG7z3e9k7XxtjSLR0JHge6bvap6vLmm6';
   const getGif = async name => {
     const url = await fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${name}&limit=20&offset=0&rating=g&lang=en`
+      `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${name}&limit=20&offset=0&rating=g&lang=en`
     );
     const random = await url.json();
     console.log(random);
