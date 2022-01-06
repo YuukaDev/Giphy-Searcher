@@ -1,72 +1,72 @@
-import React, { useState } from 'react';
-import './Content.css';
+import React, { useState } from "react";
+import "./Content.css";
 
 function Content() {
   const [toggle, setToggle] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [base, setBase] = useState({
-    imgSrc1: '',
-    link1: '',
+    imgSrc1: "",
+    link1: "",
 
-    imgSrc2: '',
-    link2: '',
+    imgSrc2: "",
+    link2: "",
 
-    imgSrc3: '',
-    link3: '',
+    imgSrc3: "",
+    link3: "",
 
-    imgSrc4: '',
-    link4: '',
+    imgSrc4: "",
+    link4: "",
 
-    imgSrc5: '',
-    link5: '',
+    imgSrc5: "",
+    link5: "",
 
-    imgSrc6: '',
-    link6: '',
+    imgSrc6: "",
+    link6: "",
 
-    imgSrc7: '',
-    link7: '',
+    imgSrc7: "",
+    link7: "",
 
-    imgSrc8: '',
-    link8: '',
+    imgSrc8: "",
+    link8: "",
 
-    imgSrc9: '',
-    link9: '',
+    imgSrc9: "",
+    link9: "",
 
-    imgSrc10: '',
-    link10: '',
+    imgSrc10: "",
+    link10: "",
 
-    imgSrc11: '',
-    link11: '',
+    imgSrc11: "",
+    link11: "",
 
-    imgSrc12: '',
-    link12: '',
+    imgSrc12: "",
+    link12: "",
 
-    imgSrc13: '',
-    link13: '',
+    imgSrc13: "",
+    link13: "",
 
-    imgSrc14: '',
-    link14: '',
+    imgSrc14: "",
+    link14: "",
 
-    imgSrc15: '',
-    link15: '',
+    imgSrc15: "",
+    link15: "",
 
-    imgSrc16: '',
-    link16: '',
+    imgSrc16: "",
+    link16: "",
 
-    imgSrc17: '',
-    link17: '',
+    imgSrc17: "",
+    link17: "",
 
-    imgSrc18: '',
-    link18: '',
+    imgSrc18: "",
+    link18: "",
 
-    imgSrc19: '',
-    link19: '',
+    imgSrc19: "",
+    link19: "",
 
-    imgSrc20: '',
-    link20: '',
+    imgSrc20: "",
+    link20: "",
   });
-  const API_KEY = 'tG7z3e9k7XxtjSLR0JHge6bvap6vLmm6';
-  const getGif = async name => {
+  const API_KEY = "tG7z3e9k7XxtjSLR0JHge6bvap6vLmm6";
+  const getGif = async (name) => {
     const url = await fetch(
       `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${name}&limit=20&offset=0&rating=g&lang=en`
     );
@@ -139,13 +139,13 @@ function Content() {
     <div className="container">
       <form
         className="form"
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
           const value = e.target.elements.input.value;
           if (!value) {
-            setError('Enter name of the gif');
+            setError("Enter name of the gif");
           } else {
-            setError('');
+            setError("");
             getGif(value);
           }
         }}
@@ -156,7 +156,7 @@ function Content() {
           <button type="submit">Submit</button>
         </div>
         <p className="error">{error}</p>
-        <div className={toggle ? 'grid-wrapper' : 'img-error'}>
+        <div className={toggle ? "grid-wrapper" : "img-error"}>
           <a target="_blank" rel="noreferrer" href={base.link1}>
             <img alt="gif" src={base.imgSrc1} />
           </a>
