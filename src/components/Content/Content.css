@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 .container {
   display: flex;
@@ -67,7 +67,7 @@ img {
 
 .error {
   margin-top: 2%;
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   text-transform: uppercase;
   font-weight: 800;
   color: #ff0000;
@@ -80,7 +80,7 @@ img {
     font-size: 1.6em;
   }
 
-  .wrapper-form  {
+  .wrapper-form {
     padding: 10px 5px;
   }
 
