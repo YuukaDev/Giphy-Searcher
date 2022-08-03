@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import "./Content.css";
 
 function Content() {
     const [toggle, setToggle] = useState(false);
     const [error, setError] = useState("");
-    const [data, setData] = useState([]);
+    const [dataGif, setData] = useState([]);
+
     const getGif = async (name) => {
         const API_KEY = process.env.REACT_APP_API_KEY
         const url = await fetch(
             `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${name}&limit=20&offset=0&rating=g&lang=en`
         );
         const random = await url.json();
-        console.log(random);
         setToggle(true);
         setData(random.data);
     };
+
+    const { data, status } = useQuery('gifs', getGif);
+
+    console.log(data);
+
     return (
         <div className="container">
             <form
@@ -37,7 +43,7 @@ function Content() {
                 </div>
                 <p className="error">{error}</p>
                 <div className={toggle ? "grid-wrapper" : "img-error"}>
-                    {data.map((item) => (
+                    {dataGif.map((item) => (
                         <div key={item.id}>
                             <a target="_blank" rel="noreferrer" href={item.url}>
                                 <img alt="gif" loading="lazy" src={item.images.original.url} />
