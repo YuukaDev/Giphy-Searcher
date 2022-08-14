@@ -17,10 +17,6 @@ function Content() {
         setData(random.data);
     };
 
-    const { data, status } = useQuery('gifs', getGif);
-
-    console.log(data);
-
     return (
         <div className="container">
             <form
